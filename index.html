@@ -28,7 +28,7 @@ background-color:#ffffff;
 background-repeat:repeat-x;
 background-position:center top;
 height: 100%;
-
+overflow-x:hidden;
 }
 
 *             { margin: 0px; padding: 0px;}
@@ -49,7 +49,7 @@ div.bhtml_a { text-align: right;}
 div.bhtml_b { font-size: 1.1em; }
 .txt-white { color: #ffffff; }
 .txt-red { color: #fe0f68; }
-	.txt-purple{color:#cf14b8;}
+.txt-purple{color:#cf14b8;}
 .center { text-align: center; }
 a { text-decoration: none; }
 
@@ -104,7 +104,7 @@ a { text-decoration: none; }
 		font-size: 20px;
     	font-family: "futuramtv","Tahoma","Verdana","sans-serif";
 		color: #fff;
-		    line-height: 18px;
+		line-height: 18px;
 	}
 	#pelne-odcinki1{
     float: right;
@@ -199,7 +199,100 @@ a { text-decoration: none; }
 	}
 @media only screen and (max-width: 980px) {
 	#main {
-    width: 490px;
+    width: 910px;
+    min-height: 305px;
+	}
+	#pelne-odcinki1{
+	width: 79%;
+    margin-top: 80px;
+	}
+#pelne-odcinki2 {
+    width: 452px;
+    margin: 160px 0 0 428px;
+    text-align: right;
+    position: absolute;
+}
+	#tablet1, #tablet2, #tablet1 .obraz, #tablet2 .obraz, .polysk1, .polysk2{
+		background-size: contain;
+	}
+	#tablet1{
+    width: 400px;
+    height: 580px;
+	margin: -130px 0 0 16px;
+	}
+	#tablet2{
+    width: 580px;
+    height: 440px;
+    margin: -52px 0 0 320px;
+	}
+	#tablet1 .obraz{
+    width: 346px;
+    height: 400px;
+    margin: 66px 0px 0px 37px;
+    z-index: 1001;
+	}
+	#tablet2 .obraz{
+    width: 439px;
+    height: 331px;
+    margin: 30px 0px 0px 68px;
+    z-index: 101;
+	}
+	.polysk1 {
+		width: 400px;
+    	height: 580px;
+		margin: -1px 0 0 -2px;
+		z-index: 1005;
+	}
+	.polysk2 {
+    width: 580px;
+    height: 440px;
+		margin: 0;
+	}
+	.ostatni{
+	    text-align: center;
+    display: flex;
+    justify-content: center;
+	width:
+	}
+.lall {
+    margin: 0px;
+    width: 440px !important;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}	
+	.lall div {
+		text-align: center;
+	}
+	#mtv-tytul {
+    margin-bottom: 35px;
+    background: url(imgs/mtv_log.png) no-repeat;
+    background-size: contain;
+    height: 138px;
+    font-size: 18px;
+    line-height: 16px;
+}
+	#stol_bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    width: 100%;
+    height: auto;
+    min-height: 50%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+	#container    {
+   		background-size: 131%;
+	}
+	
+}
+@media only screen and (max-width: 911px) {
+	#main {
+    width: 900px;
     min-height: 305px;
 	}
 	#pelne-odcinki1{
@@ -358,7 +451,7 @@ a { text-decoration: none; }
 	<div id="mtv-tytul" class="kontener">
 		<div id="pelne-odcinki1">
 			Pełne odcinki <span class="txt-purple">EX na plaży </span>Polska za darmo w MTV Play.
-			Nie czekaj! Pobierz aplikację <span class="txt-purple">MTV Play</span> na swoją komórkę, 
+			Nie czekaj!<br>Pobierz aplikację <span class="txt-purple">MTV Play</span> na swoją komórkę, 
 			albo odwiedź <a href="http://www.mtvplay.tv" target="_blank" class="txt-purple">www.mtvplay.tv</a>.
 		</div>
 		<div id="pelne-odcinki2">
